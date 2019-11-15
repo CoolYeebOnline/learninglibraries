@@ -1,0 +1,27 @@
+﻿<Window x:Class="nugetlibrary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nugetlibrary"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <Grid x:Name="grid" Background="Turquoise">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <TextBox Name="TxtURL" Grid.ColumnSpan="2" Grid.Row="0" Text="Enter URL here"/>
+                <Button Name="BtnClick" Content="Click Me!" Grid.Column="1" Grid.Row="1" Click="BtnClick_Click"/>
+                <TextBox Name="Textbox" Grid.ColumnSpan="1" Grid.Row="1" Text="Shut up and enjoy the nightcore"/>
+            </Grid>
+            </Menu>
+        
+    </DockPanel>
+</Window>
